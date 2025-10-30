@@ -1,0 +1,25 @@
+# Datos grandes / temporales
+*.zip
+*.7z
+*.rar
+*.aux
+*.log
+*.tmp
+*.lock
+.DS_Store
+Thumbs.db
+
+# Salidas
+/media/*.png
+/media/*.jpg
+/notebooks/.ipynb_checkpoints/
+
+# Datos pesados de SIG (si no se requieren)
+*.tif
+*.tiff
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gpkg
+*.geotiff
