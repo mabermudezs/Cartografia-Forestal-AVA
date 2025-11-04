@@ -1,71 +1,9 @@
-# Cartografía Forestal AVA
 
-Repositorio del Ambiente Virtual de Aprendizaje (AVA) para materiales, ejercicios y recursos de Cartografía Forestal.
-
-Resumen rápido
-- Propósito: centralizar guías, notebooks, datos y materiales multimedia para enseñanza y práctica de cartografía.
-- Público objetivo: docentes y estudiantes de cartografía, SIG y teledetección.
-
-Estructura principal (archivos y carpetas clave)
-- `README.md` - Esta guía rápida.
-- `index.html` - Página principal (lista de acceso rápido). Útil para GitHub Pages.
-- `docs/` - Manuales y guías (ej.: `docs/Guia_Cartografia_Forestal.md`).
-- `data/` - Conjuntos de datos, ejemplos y `.gitkeep` para mantener la estructura.
-- `notebooks/` - Notebooks y material práctico (ej.: `notebooks/geovisores-online/Geovisores_online.md`).
-- `media/` - Recursos multimedia: `Videos_geotools.md`, `videos.html`, `videos_enhanced.html`.
-- `evaluation/` - Actividades, rúbricas y plantillas de entrega (ej.: `evaluation/Actividades_Aprendizaje.md`).
-- `LICENSE` - CC BY-NC-SA 4.0 (licencia del repositorio).
-- `.gitignore` - Reglas de exclusión (Python, notebooks, VS Code).
-
-Rápido inicio (PowerShell)
-```powershell
-# clonar el repositorio
-git clone https://github.com/mabermudezs/Cartografia-Forestal-AVA.git
-cd Cartografia-Forestal-AVA
-
-# trabajar en una rama para cambios grandes
-git switch -c feature/mi-cambio
-
-# añadir y commitear cambios
-git add .
-git commit -m "feat: descripción breve del cambio"
-
-# subir la rama
-git push -u origin feature/mi-cambio
-```
-
-Flujo de trabajo recomendado
-- Trabaja sobre ramas (`feature/`, `fix/`, `docs/`).
-- Commits pequeños y atómicos con mensajes claros (ej.: `feat:`, `fix:`, `docs:`).
-- Crea Pull Requests para integrar cambios a `main`.
-
-Publicación (GitHub Pages)
-- `index.html` y los archivos en la raíz sirven bien para Pages.
-- Para activar Pages: Repo → Settings → Pages → Source: `main` / Folder: `/ (root)`.
-- URL resultante: `https://<usuario>.github.io/Cartografia-Forestal-AVA/` (puede tardar unos minutos en desplegar).
-
-Edición de contenidos específicos
-- Añadir PDFs a `docs/`: coloca los archivos en `docs/` y usa `git add docs/*.pdf` para versionarlos.
-- Notebooks: guarda en `notebooks/` y evita subir salidas pesadas; usa `.gitignore` para lo necesario.
-- Multimedia: `media/Videos_geotools.md` contiene la lista; `media/videos.html` y `media/videos_enhanced.html` ofrecen vistas web.
-
-Buenas prácticas y notas
-- Si los archivos binarios (grandes PDFs, imágenes) son pesados, considera alojarlos en Releases, Zenodo o almacenamiento externo y dejar enlaces en el repositorio.
-- Mantén un `docs/README.md` (índice) para describir cada PDF — puedo generarlo automáticamente si lo deseas.
-
-Contacto y contribuciones
-- Si quieres que añada plantillas, rúbricas o convierta documentos a HTML/PDF, dime qué sección prefieres y lo preparo en una rama.
-
-Últimos cambios
-- Añadido: `media/videos_enhanced.html`, `evaluation/Actividades_Aprendizaje.md`, `notebooks/geovisores-online/Geovisores_online.md`.
-
-License: CC BY-NC-SA 4.0
 # 🌲 **Ambiente Virtual de Aprendizaje (AVA)**
 ## *Usos de la Cartografía Básica y Digital en el Sector Forestal*
 **Programa:** Tecnología en Protección y Recuperación de Ecosistemas Forestales  
 **Modalidad:** Distancia – IDEAD – Universidad del Tolima
 
----
 
 ### 🧩 Descripción general
 Este repositorio forma parte del Ambiente Virtual de Aprendizaje (AVA) del curso **Cartografía Básica y Digital**. Su propósito es integrar los espacios **presenciales y virtuales** para fortalecer las competencias en el uso de la cartografía análoga y digital aplicada a la **gestión, restauración y conservación forestal**.
@@ -127,3 +65,22 @@ Este repositorio se comparte bajo **Creative Commons BY-NC-SA 4.0**.
 **Docente responsable:** _Tu nombre_  
 **Contacto:** _tu_correo@ut.edu.co_  
 **Versión:** 1.0 – Octubre 2025
+
+# Cartografía Forestal AVA
+
+Repositorio del Ambiente Virtual de Aprendizaje (AVA) para materiales, ejercicios y recursos de Cartografía Forestal.
+
+Resumen rápido
+- Propósito: centralizar guías, notebooks, datos y materiales multimedia para enseñanza y práctica de cartografía.
+- Público objetivo: docentes y estudiantes de cartografía, SIG y teledetección.
+
+Estructura principal (archivos y carpetas clave)
+- `README.md` - Esta guía rápida.
+- `index.html` - Página principal (lista de acceso rápido). Útil para GitHub Pages.
+- `docs/` - Manuales y guías (ej.: `docs/Guia_Cartografia_Forestal.md`).
+- `data/` - Conjuntos de datos, ejemplos y `.gitkeep` para mantener la estructura.
+- `notebooks/` - Notebooks y material práctico (ej.: `notebooks/geovisores-online/Geovisores_online.md`).
+- `media/` - Recursos multimedia: `Videos_geotools.md`, `videos.html`, `videos_enhanced.html`.
+- `evaluation/` - Actividades, rúbricas y plantillas de entrega (ej.: `evaluation/Actividades_Aprendizaje.md`).
+- `LICENSE` - CC BY-NC-SA 4.0 (licencia del repositorio).
+- `.gitignore` - Reglas de exclusión (Python, notebooks, VS Code).
