@@ -22,10 +22,11 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 | Carpeta | Contenido principal | Objetivo pedagógico |
 |---|---|---|
 | [`/docs`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/docs) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
-| `/data` | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
-| `/notebooks` | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
-| `/media` | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
-| `/evaluation` | Rúbricas y criterios de desempeño. | Evaluación formativa. |
+| [`/data`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/data) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
+| [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
+| [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
+| [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
+
 
 ### ⚙️ Instrucciones de uso
 1. **Clona el repositorio**
