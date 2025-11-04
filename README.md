@@ -21,7 +21,7 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 ### 🗂️ Estructura del AVA
 | Carpeta | Contenido principal | Objetivo pedagógico |
 |---|---|---|
-| `/docs` | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
+| [`/docs`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/docs) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
 | `/data` | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
 | `/notebooks` | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
 | `/media` | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
