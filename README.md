@@ -8,7 +8,7 @@
 ### 🧩 Descripción general
 Este repositorio forma parte del Ambiente Virtual de Aprendizaje (AVA) del curso **Cartografía Básica y Digital**. Su propósito es integrar los espacios **presenciales y virtuales** para fortalecer las competencias en el uso de la cartografía análoga y digital aplicada a la **gestión, restauración y conservación forestal**.
 
-El AVA emplea herramientas de software libre (QGIS, GitHub Pages, GeoAppUT, Google Earth Pro) para fomentar el aprendizaje activo, colaborativo y reflexivo.
+El AVA emplea herramientas de software libre (QGIS, GitHub Pages, y sofware de visualizacion de datos online libres) para fomentar el aprendizaje activo, colaborativo y reflexivo.
 
 ### 🎯 Objetivo general
 Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos forestales mediante herramientas SIG, fortaleciendo la comprensión espacial y ambiental del territorio.
@@ -21,23 +21,18 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 ### 🗂️ Estructura del AVA
 | Carpeta | Contenido principal | Objetivo pedagógico |
 |---|---|---|
-| [`/docs`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/docs) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
-| [`/data`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/data) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
+| [`/Documentaci%C3%B3n`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
+| [`/Datos`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Datos) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
 | [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
 | [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
-| [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
+| [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
 
 
 ### ⚙️ Instrucciones de uso
-1. **Clona el repositorio**
-   ```bash
-   git clone https://github.com/tu_usuario/Cartografia-Forestal-AVA.git
-   cd Cartografia-Forestal-AVA
-   ```
+1. **Revisión general repositorio**
 2. **Revisa las guías en `/docs`** antes de realizar los ejercicios.  
 3. **Abre QGIS** y carga datasets de `/data`.  
-4. **Ejecuta notebooks de `/notebooks`** (si usas Python con geopandas/folium).  
-5. **Publica tus resultados con commit/push** o mediante Pull Request si trabajas en equipo.
+4. **Ejecuta notebooks de `/notebooks`**  
 
 ### 🧪 Actividades principales
 | Actividad | Descripción | Producto esperado |
@@ -48,24 +43,77 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 | Proyecto final | Mapa colaborativo forestal en GitHub Pages. | Sitio web publicado. |
 
 ### 💬 Comunicación y colaboración
-- **Foros:** *GitHub Discussions*  
+- **Foros:** *  | [`/*GitHub Discussions*`]([https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation](https://github.com/mabermudezs/Cartografia-Forestal-AVA/discussions)) |
 - **Retroalimentación:** *Issues*  
 - **Trabajo colaborativo:** *Pull Requests* y revisiones cruzadas
 
 ### 📚 Bibliografía recomendada
-- IGAC (2004). *Datum Magna-Sirgas*.
-- Mancebo & López (2009). *Aprendiendo a manejar los SIG en la gestión ambiental*. Paraninfo.
-- FAO (2020). *Aplicaciones de los SIG en el manejo forestal sostenible*.
-- IDEAM (2022). *Mapas de ecosistemas y coberturas de la tierra de Colombia*.
-- GeoAppUT (2023). *Tutoriales de cartografía digital*. Universidad del Tolima.
 
-### 🪴 Licencia
-Este repositorio se comparte bajo **Creative Commons BY-NC-SA 4.0**.
+ESTRUCTURA SUGERIDA 
+
+📕 BIBLIOGRAFÍA BÁSICA OBLIGATORIA
+Fundamentos Cartográficos:
+
+Ladino Vargas, H. (2016). Cartografía básica y digital con énfasis en recursos naturales.
+
+Sistemas de Información Geográfica:
+
+Alonso Sarría, F. (2006). Sistemas de información geográfica. Universidad de Murcia, España.
+Morales, N. S., Lamaro, A. A., Zucchino, B. I., Torrusio, S. E., & Derguy, M. R. (2025). Introducción a los SIG. Libros de Cátedra.
+
+Teledetección y Aplicaciones Forestales:
+
+Novo Gómez, A., Rodríguez Somoza, J. L., Acuña-Alonso, C., Álvarez Bermúdez, X., & Lorenzo Cimadevila, H. (2021). Teledetección y Sistemas de Información Geográfica en el ámbito forestal.
+
+Caso de Estudio Local:
+
+Pérez Gómez, U., Quimbayo Cardona, M. Á., & Fernández Méndez, F. (2020). Actualización del Plan de Ordenación Forestal del departamento del Tolima (UOF III, IV, V, VII y VIII). Universidad del Tolima & Cortolima.
+
+Aplicaciones Avanzadas:
+
+Villalón Demmer, J. (2025). Caracterización de la severidad de los incendios forestales: caso de estudio en la Sierra de la Culebra (2022). [Doctoral dissertation].
+
+
+📗 BIBLIOGRAFÍA COMPLEMENTARIA RECOMENDADA
+Herramientas Prácticas:
+
+García, A. J. S. (2018). Planificación forestal y gestión territorial, mediante herramientas open source e imágenes de satelites. Universidad de Córdoba.
+Rodríguez Carballo, E., & Alfaro Artavia, L. D. (s. f.). Manual de uso del software QGIS. PNUD & AYA.
+
+Geociencias y Variables Ambientales:
+
+Navarro Cerrillo, R. M., González Moreno, P., Varo Martínez, M. Á., & Ariza Salamanca, A. J. (Coords.). (2024). Geociencias aplicadas a la gestión forestal. Máster Geoforest. https://mastergeoforest.es/libro-geoforest/
+
+Aplicaciones Específicas:
+
+Sastre, L. F. S., Marcos-Robles, J. L., Llorente, E. H., Navarro, S. H., & Prieto, P. C. (2016). Aplicación de tecnologías de teledetección al estudio de biomasa forestal. Revista Ibérica de Sistemas e Tecnologias de Informação, (19), 61.
+Lekuona Zuazo, I., Lamelas Gracia, M. T., & Montealegre Gracia, A. L. (2017). Cartografía de la biomasa aérea total en masas de Pinus radiata D. Don a partir de datos públicos LIDAR-PNOA e inventario forestal nacional.
+
+Casos Regionales:
+
+Ancira-Sánchez, L., & Treviño Garza, E. J. (2015). Utilización de imágenes de satélite en el manejo forestal del noreste de México. Madera y bosques, 21(1), 77-91.
+
+
+📘 BIBLIOGRAFÍA OPCIONAL DE CONSULTA
+Contexto Nacional Colombiano:
+
+Santos, L., Yepes, A., Rey, C., Guerrero, R., Ruiz, A., & Urrego, D. (2018). Manejo forestal sostenible a través de la forestería comunitaria: una propuesta técnica, institucional y financiera para promover en Colombia. MADS. Programa ONU-REDD.
+Instituto Amazónico de Investigaciones Científicas SINCHI. (2014). Zonificación ambiental y ordenamiento de la Reserva Forestal de la Amazonia.
+
+Contexto Global:
+
+González Rojas, C. E. (2020). Tecnología de Información Geoespacial (TIG) para el desarrollo sostenible: Una perspectiva desde la investigación y la docencia.
+Conferencia de las Naciones Unidas sobre Comercio y Desarrollo. (2020). Las tecnologías espaciales al servicio del desarrollo sostenible. ONU.
+
+Metodologías Avanzadas:
+
+Díez-Hochleitner Suárez, J. (2022). Aplicación de un espacio reducido a clasificación de imágenes de teledetección: investigación de la deforestación en la zona del Amazonas.
+Morán, J. T., Landa, A. F., & Vega, P. R. (2014). Elaboración de cartografía forestal en canarias a partir de datos LIDAR. In Investigación, gestión y técnica forestal, en la región de la Macaronesia (pp. 185-200).
 
 ### 🌐 Desarrollo y soporte
-**Docente responsable:** _Tu nombre_  
-**Contacto:** _tu_correo@ut.edu.co_  
-**Versión:** 1.0 – Octubre 2025
+**Tutor  responsable:** Miguel Angel Bermudez S.
+**Contacto:** mabermudezs@ut.edu.co_  
+**Versión:** 1.0 – Noviembre 2025
 
 # Cartografía Forestal AVA
 
