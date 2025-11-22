@@ -100,6 +100,15 @@ graph LR
 - **Trabajo colaborativo:** *Pull Requests* y revisiones cruzadas
 
 
+mapa conceptual interactivo  introductorio  que explora la integración de la cartografía básica y digital en la gestión forestal sostenible.
+
+## 🚀 Ver Demo en Vivo
+
+👉 **[🔗 Ver Mapa Interactivo](https://htmlpreview.github.io/?https://github.com/mabermudezs/Cartografia-Forestal-AVA/blob/main/mapa_html_puro.html)**
+
+
+
+
 ### 📚 Bibliografía recomendada
 
 Los  documentos mostrados en las ferencias bibliograficas se encuentran dispuestos en [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n)
