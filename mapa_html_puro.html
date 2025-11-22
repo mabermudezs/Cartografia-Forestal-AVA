@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartografía Básica y Digital en el Sector Forestal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .control-btn {
+            display: block;
+            margin: 0 auto 2rem;
+            background: #16a34a;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .control-btn:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(-1rem);
+            transition: all 0.7s;
+        }
+
+        .title-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .title-section h1 {
+            font-size: 2.5rem;
+            color: #166534;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .title-section p {
+            font-size: 1.125rem;
+            color: #374151;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+
+        .concepts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .concept-card {
+            border-radius: 1rem;
+            padding: 1.5rem;
+            color: white;
+            opacity: 0;
+            transform: translateX(-2rem);
+            transition: all 0.7s;
+        }
+
+        .concept-card.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .concept-card.right {
+            transform: translateX(2rem);
+        }
+
+        .concept-card.right.show {
+            transform: translateX(0);
+        }
+
+        .card-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+
+        .card-purple {
+            background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .card-subtitle {
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .card-content {
+            background: rgba(255,255,255,0.2);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .card-content div {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            transition: background 0.3s;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content div:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .integration-banner {
+            text-align: center;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.7s;
+        }
+
+        .integration-banner.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .integration-banner div {
+            display: inline-block;
+            background: linear-gradient(90deg, #3b82f6, #16a34a, #9333ea);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            animation: pulse 2s infinite;
+        }
+
+        .applications {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            color: white;
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all 0.7s;
+        }
+
+        .applications.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .applications-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .app-card {
+            background: rgba(255,255,255,0.2);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        .app-card:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-4px);
+        }
+
+        .app-card h3 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-card ul {
+            list-style: none;
+            font-size: 0.875rem;
+            opacity: 0.95;
+        }
+
+        .app-card li {
+            margin-bottom: 0.25rem;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .tech-card {
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            color: white;
+            opacity: 0;
+            transition: all 0.7s;
+        }
+
+        .tech-card.show {
+            opacity: 1;
+        }
+
+        .tech-orange {
+            background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+            transform: translateX(-2rem) rotate(-3deg);
+        }
+
+        .tech-orange.show {
+            transform: translateX(0) rotate(0);
+        }
+
+        .tech-cyan {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            transform: scale(0.9);
+        }
+
+        .tech-cyan.show {
+            transform: scale(1);
+        }
+
+        .tech-pink {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            transform: translateX(2rem) rotate(3deg);
+        }
+
+        .tech-pink.show {
+            transform: translateX(0) rotate(0);
+        }
+
+        .tech-card h3 {
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tech-card ul {
+            list-style: none;
+            font-size: 0.875rem;
+        }
+
+        .tech-card li {
+            margin-bottom: 0.375rem;
+            transition: transform 0.3s;
+        }
+
+        .tech-card li:hover {
+            transform: translateX(0.25rem);
+        }
+
+        .benefits {
+            background: linear-gradient(90deg, #10b981 0%, #14b8a6 100%);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            color: white;
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all 0.7s;
+        }
+
+        .benefits.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .benefits-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .benefit-item {
+            background: rgba(255,255,255,0.2);
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .benefit-item:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #4b5563;
+            opacity: 0;
+            transition: opacity 0.7s;
+        }
+
+        .footer.show {
+            opacity: 1;
+        }
+
+        .progress {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .progress-dot {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background: #d1d5db;
+            transition: all 0.3s;
+        }
+
+        .progress-dot.active {
+            background: #16a34a;
+            transform: scale(1.3);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @media (max-width: 768px) {
+            .concepts-grid,
+            .applications-grid,
+            .tech-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="control-btn" onclick="toggleAnimation()">
+            <span id="btnText">⏸ Pausar Animación</span>
+        </button>
+
+        <div class="title-section" id="title">
+            <h1>Cartografía Básica y Digital en el Sector Forestal</h1>
+            <p>Integración de la información geoespacial para la gestión sostenible de recursos forestales</p>
+        </div>
+
+        <div class="main-content">
+            <div class="concepts-grid">
+                <div class="concept-card card-blue" id="card1">
+                    <div class="card-header">
+                        <span style="font-size: 2rem;">🗺️</span>
+                        <h2>Cartografía Básica</h2>
+                    </div>
+                    <p class="card-subtitle">Marco de referencia espacial fundamental</p>
+                    <div class="card-content">
+                        <div><span>•</span><span>Relieve y topografía</span></div>
+                        <div><span>•</span><span>Hidrografía (ríos, cuencas)</span></div>
+                        <div><span>•</span><span>Vías de comunicación</span></div>
+                        <div><span>•</span><span>Límites político-administrativos</span></div>
+                        <div><span>•</span><span>Escalas: 1:25.000 - 1:100.000</span></div>
+                    </div>
+                </div>
+
+                <div class="concept-card card-purple right" id="card2">
+                    <div class="card-header">
+                        <span style="font-size: 2rem;">🛰️</span>
+                        <h2>Cartografía Digital</h2>
+                    </div>
+                    <p class="card-subtitle">Tecnología y formato de representación</p>
+                    <div class="card-content">
+                        <div><span>•</span><span>Formatos: vectorial, ráster, bases de datos</span></div>
+                        <div><span>•</span><span>SIG (Sistemas de Información Geográfica)</span></div>
+                        <div><span>•</span><span>Sensores remotos y GPS</span></div>
+                        <div><span>•</span><span>Actualización y análisis en tiempo real</span></div>
+                        <div><span>•</span><span>Geoportales y aplicaciones web</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="integration-banner" id="banner">
+                <div>↓ INTEGRACIÓN EN EL SECTOR FORESTAL ↓</div>
+            </div>
+
+            <div class="applications" id="apps">
+                <div class="applications-header">
+                    <span style="font-size: 2.5rem;">🌲</span>
+                    <h2 style="font-size: 1.5rem;">Aplicaciones en el Sector Forestal</h2>
+                </div>
+                <div class="applications-grid">
+                    <div class="app-card">
+                        <h3>📊 Inventarios Forestales</h3>
+                        <ul>
+                            <li>• Tipos de bosque</li>
+                            <li>• Especies dominantes</li>
+                            <li>• Volúmenes maderables</li>
+                            <li>• Densidad forestal</li>
+                        </ul>
+                    </div>
+                    <div class="app-card">
+                        <h3>👁️ Monitoreo</h3>
+                        <ul>
+                            <li>• Deforestación</li>
+                            <li>• Incendios forestales</li>
+                            <li>• Plagas y enfermedades</li>
+                            <li>• Cambios de cobertura</li>
+                        </ul>
+                    </div>
+                    <div class="app-card">
+                        <h3>📋 Planificación</h3>
+                        <ul>
+                            <li>• Ordenación territorial</li>
+                            <li>• Zonificación de uso</li>
+                            <li>• Gestión de concesiones</li>
+                            <li>• Planes de manejo</li>
+                        </ul>
+                    </div>
+                    <div class="app-card">
+                        <h3>📈 Análisis Espacial</h3>
+                        <ul>
+                            <li>• Fragmentación</li>
+                            <li>• Servicios ecosistémicos</li>
+                            <li>• Captura de carbono</li>
+                            <li>• Conectividad de hábitats</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card tech-orange" id="tech1">
+                    <h3>🛰️ Datos de Entrada</h3>
+                    <ul>
+                        <li>→ Imágenes satelitales</li>
+                        <li>→ LiDAR aéreo</li>
+                        <li>→ Drones (UAV)</li>
+                        <li>→ GPS de precisión</li>
+                    </ul>
+                </div>
+                <div class="tech-card tech-cyan" id="tech2">
+                    <h3>💾 Herramientas SIG</h3>
+                    <ul>
+                        <li>→ ArcGIS / QGIS</li>
+                        <li>→ Procesamiento de imágenes</li>
+                        <li>→ Modelos predictivos</li>
+                        <li>→ Bases de datos espaciales</li>
+                    </ul>
+                </div>
+                <div class="tech-card tech-pink" id="tech3">
+                    <h3>🗺️ Productos Finales</h3>
+                    <ul>
+                        <li>→ Mapas de cobertura</li>
+                        <li>→ Cartografía de biomasa</li>
+                        <li>→ Mapas de riesgo</li>
+                        <li>→ Atlas forestales digitales</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="benefits" id="benefits">
+                <div class="benefits-header">
+                    <span style="font-size: 2rem;">🛡️</span>
+                    <h2 style="font-size: 1.5rem;">Beneficios de la Integración Digital</h2>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item"><strong>Precisión:</strong> Reducción de errores en mediciones</div>
+                    <div class="benefit-item"><strong>Eficiencia:</strong> Menor tiempo y costo operativo</div>
+                    <div class="benefit-item"><strong>Actualización:</strong> Monitoreo continuo en tiempo real</div>
+                    <div class="benefit-item"><strong>Accesibilidad:</strong> Información disponible para todos</div>
+                    <div class="benefit-item"><strong>Análisis avanzado:</strong> Modelos espaciales complejos</div>
+                    <div class="benefit-item"><strong>Transparencia:</strong> Gestión sostenible verificable</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="footer">
+            <p>La cartografía digital transforma la gestión forestal moderna, permitiendo decisiones basadas en datos precisos y actualizados</p>
+        </div>
+
+        <div class="progress">
+            <div class="progress-dot" id="dot0"></div>
+            <div class="progress-dot" id="dot1"></div>
+            <div class="progress-dot" id="dot2"></div>
+            <div class="progress-dot" id="dot3"></div>
+            <div class="progress-dot" id="dot4"></div>
+            <div class="progress-dot" id="dot5"></div>
+        </div>
+    </div>
+
+    <script>
+        let step = 0;
+        let isAnimating = true;
+        let animationInterval;
+
+        const elements = [
+            document.getElementById('title'),
+            [document.getElementById('card1'), document.getElementById('card2')],
+            document.getElementById('banner'),
+            document.getElementById('apps'),
+            [document.getElementById('tech1'), document.getElementById('tech2'), document.getElementById('tech3')],
+            [document.getElementById('benefits'), document.getElementById('footer')]
+        ];
+
+        function showStep(stepNum) {
+            // Actualizar puntos de progreso
+            for (let i = 0; i <= 5; i++) {
+                const dot = document.getElementById(`dot${i}`);
+                if (i <= stepNum) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            }
+
+            // Mostrar elementos del paso actual
+            if (stepNum < elements.length) {
+                const element = elements[stepNum];
+                if (Array.isArray(element)) {
+                    element.forEach((el, index) => {
+                        setTimeout(() => el.classList.add('show'), index * 200);
+                    });
+                } else {
+                    element.classList.add('show');
+                }
+            }
+        }
+
+        function animate() {
+            showStep(step);
+            step = (step + 1) % 6;
+        }
+
+        function startAnimation() {
+            animationInterval = setInterval(animate, 3000);
+        }
+
+        function toggleAnimation() {
+            isAnimating = !isAnimating;
+            const btn = document.getElementById('btnText');
+            
+            if (isAnimating) {
+                btn.textContent = '⏸ Pausar Animación';
+                startAnimation();
+            } else {
+                btn.textContent = '▶ Iniciar Animación';
+                clearInterval(animationInterval);
+            }
+        }
+
+        // Iniciar animación al cargar
+        window.addEventListener('load', () => {
+            startAnimation();
+        });
+    </script>
+</body>
+</html>
