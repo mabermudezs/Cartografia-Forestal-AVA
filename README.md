@@ -6,50 +6,103 @@
 
 
 ### 🧩 Descripción general
-Este repositorio forma parte del Ambiente Virtual de Aprendizaje (AVA) del curso **Cartografía Básica y Digital**. Su propósito es integrar los espacios **presenciales y virtuales** para fortalecer las competencias en el uso de la cartografía análoga y digital aplicada a la **gestión, restauración y conservación forestal**.
+Este repositorio forma parte del Ambiente Virtual de Aprendizaje (AVA) del curso **Cartografía Básica y Digital**. Su propósito es integrar los espacios **presenciales y virtuales** para fortalecer las competencias en el uso de la cartografía basica y digital aplicada a la **gestión, restauración y conservación forestal**.
 
 El AVA emplea herramientas de software libre (QGIS, GitHub Pages, y sofware de visualizacion de datos online libres) para fomentar el aprendizaje activo, colaborativo y reflexivo.
+
 
 ### 🎯 Objetivo general
 Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos forestales mediante herramientas SIG, fortaleciendo la comprensión espacial y ambiental del territorio.
 
-### 🧠 Resultados de aprendizaje
-1. Reconoce los usos de la cartografía básica y digital en la planificación y restauración forestal.  
-2. Interpreta información espacial proveniente de fuentes oficiales (IGAC, IDEAM, DANE).  
-3. Genera un mapa temático forestal digital utilizando software SIG o herramientas web.  
+## Estructura de Competencias y Resultados de Aprendizaje
 
-### 🗂️ Estructura del AVA
+### 🎯 Competencias del Curso
+
+| Dimensión | Descripción | Resultados Asociados |
+|-----------|-------------|---------------------|
+| **🌱 SER** <br> *Afectiva* | Comprende la dimensión espacial y temporal de ecosistemas forestales, desarrollando **compromiso ético** con la gestión sostenible del territorio en proyectos de restauración y conservación. | RA1, RA3 |
+| **🧠 SABER** <br> *Cognitiva* | Domina fundamentos de cartografía digital y SIG, comprendiendo la **relación entre variables biofísicas y socioeconómicas** que determinan la aptitud forestal del territorio colombiano. | RA1, RA2, RA3 |
+| **🛠️ HACER** <br> *Praxiológica* | Aplica técnicas de cartografía y SIG para **producir mapas temáticos forestales**, elaborando análisis espaciales que identifiquen zonas con potencial de restauración y manejo sostenible. | RA1, RA2, RA3 |
+
+
+### 📚 Resultados de Aprendizaje y Actividades Prácticas
+
+#### 🟢 RA1: Lectura e Interpretación Cartográfica
+> **Práctico 1:** Identificación de elementos cartográficos en mapas digitales
+
+**Descripción:** Identifica y describe correctamente los elementos cartográficos fundamentales (escala, proyección, simbología, leyenda, orientación) en mapas digitales forestales.
+
+**📦 Evidencia:** Reporte de análisis de elementos cartográficos con evaluación de calidad
+
+**🔗 Competencias:** SER | SABER | HACER
+
+---
+
+#### 🔵 RA2: Gestión de Datos Geoespaciales Oficiales
+> **Práctico 2:** Exploración y descarga de capas geográficas de fuentes oficiales (UPRA)
+
+**Descripción:** Explora, descarga y organiza capas geográficas de fuentes oficiales colombianas (UPRA, IGAC, IDEAM) para análisis geoespacial forestal.
+
+**📦 Evidencia:** Carpeta de datos con metadatos + mapa temático básico
+
+**🔗 Competencias:** SABER | HACER
+
+---
+
+#### 🟡 RA3: Análisis Espacial Integrado con SIG
+> **Práctico 3:** Integración de datos y análisis con QGIS/ArcGIS de variables espaciales forestales
+
+**Descripción:** Aplica herramientas SIG (QGIS/ArcGIS) para integrar y analizar variables espaciales relevantes en la gestión forestal mediante geoprocesamiento.
+
+**📦 Evidencia:** Mapa de análisis integrado + documento metodológico
+
+**🔗 Competencias:** SER | SABER | HACER
+
+---
+
+### 📊 Alineación Curricular
+
+| RA | Actividad Práctica | Herramientas/Fuentes | Producto Evaluable |
+|----|-------------------|----------------------|-------------------|
+| **RA1** | Práctico 1: Identificación de elementos cartográficos | Mapas digitales (AVA, IGAC, IDEAM) | Reporte de análisis comparativo |
+| **RA2** | Práctico 2: Exploración y descarga de capas | UPRA, IGAC, IDEAM | Carpeta de datos + mapa temático |
+| **RA3** | Práctico 3: Integración y análisis espacial | QGIS, ArcGIS | Mapa de análisis + memoria metodológica |
+
+---
+
+### 🎓 Progresión de Aprendizaje
+```mermaid
+graph LR
+    A[RA1: Identificar] --> B[RA2: Gestionar]
+    B --> C[RA3: Analizar]
+    
+    style A fill:#86efac
+    style B fill:#93c5fd
+    style C fill:#fcd34d
+```
+
+**Enfoque:** Aprendizaje basado en prácticos secuenciales
+
+ ### 🗂️ Estructura del AVA
 | Carpeta | Contenido principal | Objetivo pedagógico |
 |---|---|---|
-| [`/Documentaci%C3%B3n`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
+| [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
 | [`/Datos`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Datos) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
 | [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
 | [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
 | [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
 
 
-### ⚙️ Instrucciones de uso
-1. **Revisión general repositorio**
-2. **Revisa las guías en `/docs`** antes de realizar los ejercicios.  
-3. **Abre QGIS** y carga datasets de `/data`.  
-4. **Ejecuta notebooks de `/notebooks`**  
-
-### 🧪 Actividades principales
-| Actividad | Descripción | Producto esperado |
-|---|---|---|
-| Lectura crítica | Lectura de Mancebo (2009) y debate en *Discussions*. | Comentario reflexivo. |
-| Práctica QGIS | Mapa temático forestal (coberturas + pendientes). | PNG en `/media/`. |
-| Ensayo reflexivo | “Cómo la cartografía digital apoya la gestión ambiental”. | PDF en `/docs/`. |
-| Proyecto final | Mapa colaborativo forestal en GitHub Pages. | Sitio web publicado. |
 
 ### 💬 Comunicación y colaboración
 - **Foros:** *  | [`/*GitHub Discussions*`]([https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation](https://github.com/mabermudezs/Cartografia-Forestal-AVA/discussions)) |
 - **Retroalimentación:** *Issues*  
 - **Trabajo colaborativo:** *Pull Requests* y revisiones cruzadas
 
+
 ### 📚 Bibliografía recomendada
 
-ESTRUCTURA SUGERIDA 
+Los  documentos mostrados en las ferencias bibliograficas se encuentran dispuestos en [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n)
 
 📕 BIBLIOGRAFÍA BÁSICA OBLIGATORIA
 Fundamentos Cartográficos:
