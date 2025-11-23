@@ -1,0 +1,2 @@
+Santos, L., Yepes, A., Rey, C., Guerrero, R., Ruiz, A., & Urrego, D. (2018). Manejo forestal sostenible a través de la forestería comunitaria: una propuesta técnica, institucional y financiera para promover en Colombia. Ministerio de Ambiente y Desarrollo Sostenible [MADS]. Bogotá DC: Programa ONU-REDD.
+Actualización del Plan de Ordenación Forestal del departamento del Tolima (UOF III, IV, V, VII y VIII) / Uriel Pérez Gómez, Miguel Ángel Quimbayo Cardona y Fernando Fernández Méndez; Ibagué: Universidad del Tolima & Cortolima, 2020. 
