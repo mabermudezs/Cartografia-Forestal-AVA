@@ -5,6 +5,28 @@
 **Modalidad:** Distancia – IDEAD – Universidad del Tolima
 
 
+ ### 🗂️ Estructura del AVA
+| Carpeta | Contenido principal | Objetivo pedagógico |
+|---|---|---|
+| [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
+| [`/Datos`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Datos) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
+| [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
+| [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
+| [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
+
+
+### 💬 Comunicación 
+- **Foros:** *   [`/*GitHub Discussions*`]([https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation](https://github.com/mabermudezs/Cartografia-Forestal-AVA/discussions)
+
+
+
+## Integración de la información geoespacial para la gestión sostenible de recursos forestales
+
+mapa conceptual interactivo  introductorio  que explora la integración de la cartografía básica y digital en la gestión forestal sostenible.
+
+👉 **[🔗 Ver Mapa Interactivo](https://htmlpreview.github.io/?https://github.com/mabermudezs/Cartografia-Forestal-AVA/blob/main/mapa_html_puro.html)**
+
+
 ### 🧩 Descripción general
 Este repositorio forma parte del Ambiente Virtual de Aprendizaje (AVA) del curso **Cartografía Básica y Digital**. Su propósito es integrar los espacios **presenciales y virtuales** para fortalecer las competencias en el uso de la cartografía basica y digital aplicada a la **gestión, restauración y conservación forestal**.
 
@@ -47,6 +69,21 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 
 **🔗 Competencias:** SABER | HACER
 
+**Heteroevaluación Prácticos 1 y 2**
+
+**Objetivo:** Evaluar las habilidades del estudiante en la lectura e interpretación de elementos cartográficos y en la gestión de datos geoespaciales oficiales, así como su capacidad para analizar críticamente la calidad y pertinencia de fuentes de información geográfica en el contexto forestal colombiano.
+
+**Método:** Evaluación mediante cuestionario de selección múltiple a través de Google Forms, enfocado en evaluar los conocimientos adquiridos sobre elementos cartográficos fundamentales (escala, proyección, simbología, leyenda, orientación), sistemas de coordenadas, fuentes oficiales de información geoespacial (UPRA, IGAC, IDEAM) y criterios de calidad de datos geográficos aplicados a ecosistemas forestales.
+
+**Criterios de evaluación:**
+
+-Comprensión de Fundamentos Cartográficos: Comprensión de elementos cartográficos y su función en mapas forestales, conocimiento de sistemas de proyección y coordenadas utilizados en Colombia, capacidad para identificar y evaluar la calidad de representaciones cartográficas.
+-Gestión de Datos Geoespaciales Oficiales: Habilidad para identificar y acceder a fuentes oficiales colombianas (UPRA, IGAC, IDEAM), comprensión de metadatos y estándares de información geográfica, capacidad para organizar y documentar capas geográficas apropiadamente.
+-Análisis Crítico y Aplicación Forestal: Capacidad para evaluar la pertinencia de mapas y datos para gestión forestal, identificación de limitaciones y restricciones de fuentes cartográficas, habilidad para seleccionar información apropiada según escala y propósito de análisis territorial.
+
+RA Evaluados: RA1 (Lectura e interpretación cartográfica) y RA2 (Gestión de datos geoespaciales oficiales)
+
+
 ---
 
 #### 🟡 RA3: Análisis Espacial Integrado con SIG
@@ -57,6 +94,58 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 **📦 Evidencia:** Mapa de análisis integrado + documento metodológico
 
 **🔗 Competencias:** SER | SABER | HACER
+
+Coevaluación Práctico 3
+
+Evalúa el desempeño de tus compañeros en el proyecto de análisis espacial integrado, considerando los objetivos establecidos en el presente curso de Cartografía y SIG Aplicado a Gestión Forestal.
+
+**Objetivo:** Fomentar la evaluación crítica y constructiva entre compañeros para mejorar la comprensión colectiva sobre técnicas de geoprocesamiento, integración de variables espaciales y análisis multicriterio aplicados a la zonificación forestal.
+
+**Método:** Presentaciones grupales del mapa de análisis integrado y memoria metodológica, seguidas de sesiones de preguntas y respuestas donde los estudiantes evalúan críticamente el trabajo de sus compañeros, analizando las decisiones metodológicas, la calidad cartográfica y la pertinencia territorial de las propuestas.
+
+**Criterios de evaluación:**
+
+Claridad en la presentación cartográfica: Calidad visual del mapa temático, adecuación de simbología, legibilidad de elementos cartográficos y comunicación efectiva de los resultados del análisis espacial.
+Profundidad del análisis metodológico: Fundamentación técnica de las decisiones de geoprocesamiento, justificación de variables seleccionadas, coherencia en la integración de capas geográficas y solidez del análisis multicriterio realizado en QGIS/ArcGIS.
+Aplicabilidad y pertinencia forestal: Relevancia del análisis para la gestión forestal del territorio estudiado, viabilidad de las zonas identificadas, consideración del contexto local y calidad de las recomendaciones de manejo propuestas.
+Calidad de las respuestas: Capacidad para defender decisiones metodológicas, reconocer limitaciones del análisis, responder técnicamente a cuestionamientos y demostrar comprensión profunda de los procesos SIG aplicados.
+
+Instrucciones: Evalúa a cada grupo usando la siguiente escala para cada criterio:
+
+1: No cumple con las expectativas del práctico (trabajo incompleto, errores significativos, falta de fundamento técnico).
+2: Cumple parcialmente con las expectativas del práctico (trabajo básico, algunos errores menores, fundamento técnico limitado).
+3: Cumple completamente con las expectativas del práctico (trabajo completo, técnicamente correcto, bien fundamentado).
+4: Supera las expectativas del práctico (trabajo excepcional, innovador, análisis profundo y propuestas sólidas).
+
+
+RA Evaluado: RA3 (Análisis espacial integrado con SIG)
+
+
+**Autoevaluación Prácticos 1, 2 y 3**
+
+**Objetivo**: Promover la reflexión metacognitiva del estudiante sobre su propio proceso de aprendizaje en cartografía básica y digital, identificando fortalezas, debilidades, retos superados y áreas de mejora en el dominio de técnicas de lectura cartográfica, gestión de datos geoespaciales y análisis espacial con SIG aplicados a la gestión forestal.
+
+**Método:** Cuestionario de autoevaluación individual a través de Google Forms con escala Likert (1-5) que permite al estudiante valorar su nivel de comprensión y dominio en cada uno de los componentes fundamentales trabajados en los tres prácticos, complementado con preguntas abiertas de reflexión sobre retos enfrentados, logros alcanzados y aspectos a fortalecer en su formación geoespacial.
+
+**Criterios de evaluación:**
+
+Comprensión de fundamentos cartográficos: Autovaloración del dominio de elementos cartográficos fundamentales (escala, proyección, simbología, leyenda, orientación), sistemas de coordenadas y capacidad para evaluar críticamente la calidad de mapas forestales digitales.
+Gestión de información geoespacial oficial: Autovaloración de la habilidad para acceder, descargar, organizar y documentar capas geográficas de fuentes oficiales colombianas (UPRA, IGAC, IDEAM), así como el manejo de metadatos y formatos de datos geoespaciales.
+Competencia técnica en SIG: Autovaloración del dominio en el uso de software especializado (QGIS/ArcGIS) para ejecutar técnicas de geoprocesamiento, integrar variables espaciales y realizar análisis multicriterio para zonificación forestal.
+Capacidad de análisis e interpretación: Autovaloración de la habilidad para interpretar resultados de análisis espaciales, identificar zonas con potencial forestal, fundamentar decisiones territoriales y producir mapas temáticos con calidad profesional.
+Reflexión crítica y metacognición: Capacidad para identificar con honestidad los principales retos enfrentados durante la unidad, reconocer fortalezas consolidadas y detectar áreas específicas que requieren refuerzo o práctica adicional para mejorar el desempeño profesional.
+
+Escala de valoración:
+
+1: Mínimo entendimiento
+2: Bajo entendimiento
+3: Entendimiento moderado
+4: Buen entendimiento
+5: Excelente dominio
+
+
+RA Evaluados: RA1 (Lectura e interpretación cartográfica), RA2 (Gestión de datos geoespaciales oficiales) y RA3 (Análisis espacial integrado con SIG)
+
 
 ---
 
@@ -82,30 +171,6 @@ graph LR
 ```
 
 **Enfoque:** Aprendizaje basado en prácticos secuenciales
-
- ### 🗂️ Estructura del AVA
-| Carpeta | Contenido principal | Objetivo pedagógico |
-|---|---|---|
-| [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
-| [`/Datos`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Datos) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
-| [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
-| [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
-| [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
-
-
-
-### 💬 Comunicación y colaboración
-- **Foros:** *  | [`/*GitHub Discussions*`]([https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/evaluation](https://github.com/mabermudezs/Cartografia-Forestal-AVA/discussions)) |
-- **Retroalimentación:** *Issues*  
-- **Trabajo colaborativo:** *Pull Requests* y revisiones cruzadas
-
-
-mapa conceptual interactivo  introductorio  que explora la integración de la cartografía básica y digital en la gestión forestal sostenible.
-
-## 🚀 Ver Demo en Vivo
-
-👉 **[🔗 Ver Mapa Interactivo](https://htmlpreview.github.io/?https://github.com/mabermudezs/Cartografia-Forestal-AVA/blob/main/mapa_html_puro.html)**
-
 
 
 
