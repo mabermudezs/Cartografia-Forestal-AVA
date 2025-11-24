@@ -83,6 +83,7 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 
 RA Evaluados: RA1 (Lectura e interpretación cartográfica) y RA2 (Gestión de datos geoespaciales oficiales)
 
+[<img width="512" height="512" alt="formularios-de-google" src="https://github.com/user-attachments/assets/5a331447-8b18-4627-a14c-1763d8c616dd" /> ](https://docs.google.com/forms/d/e/1FAIpQLSdmD_XM7NyUVpLvgbLsHu1MWpNvqyLDOL5qJwa9HxJ64lfquA/viewform?usp=header)
 
 ---
 
