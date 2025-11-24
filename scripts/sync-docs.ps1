@@ -77,8 +77,11 @@ Write-Host "Inspecting git status..."
 git status --porcelain
 
 # Restore README and Evaluación if changed accidentally
-git restore --source=HEAD -- README.md 2>$null || Write-Host 'README.md unchanged or not present in HEAD'
-git restore --source=HEAD -- "Evaluación/" 2>$null || Write-Host 'Evaluación/ unchanged or not present in HEAD'
+& git restore --source=HEAD -- README.md 2>$null
+if ($LASTEXITCODE -ne 0) { Write-Host 'README.md unchanged or not present in HEAD' }
+
+& git restore --source=HEAD -- 'Evaluación/' 2>$null
+if ($LASTEXITCODE -ne 0) { Write-Host 'Evaluación/ unchanged or not present in HEAD' }
 
 Write-Host "Staging only target folders..."
 git add --all Datos "Documentación" media
