@@ -10,7 +10,6 @@
 |---|---|---|
 | [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n) | Guías teóricas, lecturas, PDFs y referencias. | Comprensión conceptual. |
 | [`/Datos`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Datos) | Capas SIG (.shp, .tif, .csv). | Aplicación práctica. |
-| [`/notebooks`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/notebooks) | Ejercicios y tutoriales en QGIS o Python. | Desarrollo técnico. |
 | [`/media`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/media) | Infografías, videos y mapas de apoyo. | Visualización y motivación. |
 | [`/evaluation`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n) | Rúbricas y criterios de desempeño. | Evaluación formativa. |
 
@@ -55,6 +54,7 @@ Desarrollar habilidades para interpretar, generar y aplicar mapas temáticos for
 **Descripción:** Identifica y describe correctamente los elementos cartográficos fundamentales (escala, proyección, simbología, leyenda, orientación) en mapas digitales forestales.
 
 **📦 Evidencia:** Reporte de análisis de elementos cartográficos con evaluación de calidad
+[Practico_1](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Evaluaci%C3%B3n/Practico_1)
 
 **🔗 Competencias:** SER | SABER | HACER
 
