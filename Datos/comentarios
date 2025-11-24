@@ -1,0 +1,23 @@
+md
+
+Descargar carpetas a traves de https://downgit.github.io/#/home
+DownGit
+
+Permite descargar solo la carpeta, sin bajar todo el repo.
+
+Pasos:
+ejemplo: 
+Ve a GitHub y abre la carpeta:
+/Datos/Capas/Hidrografia/
+
+Copia la URL de esa carpeta.
+
+Entra a:
+https://downgit.github.io
+
+Pega la URL en el cuadro.
+
+Clic en Download.
+
+✔ Descarga exacta de la carpeta seleccionada
+✔ Mantiene la estructura y los archivos .shp, .dbf, .prj, etc.
