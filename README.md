@@ -239,11 +239,6 @@ Metodologías Avanzadas:
 Díez-Hochleitner Suárez, J. (2022). Aplicación de un espacio reducido a clasificación de imágenes de teledetección: investigación de la deforestación en la zona del Amazonas.
 Morán, J. T., Landa, A. F., & Vega, P. R. (2014). Elaboración de cartografía forestal en canarias a partir de datos LIDAR. In Investigación, gestión y técnica forestal, en la región de la Macaronesia (pp. 185-200).
 
-### 🌐 Desarrollo y soporte
-**Tutor  responsable:** Miguel Angel Bermudez S.
-**Contacto:** mabermudezs@ut.edu.co_  
-**Versión:** 1.0 – Noviembre 2025
-
 # Cartografía Forestal AVA
 
 Repositorio del Ambiente Virtual de Aprendizaje (AVA) para materiales, ejercicios y recursos de Cartografía Forestal.
@@ -252,13 +247,8 @@ Resumen rápido
 - Propósito: centralizar guías, notebooks, datos y materiales multimedia para enseñanza y práctica de cartografía.
 - Público objetivo: docentes y estudiantes de cartografía, SIG y teledetección.
 
-Estructura principal (archivos y carpetas clave)
-- `README.md` - Esta guía rápida.
-- `index.html` - Página principal (lista de acceso rápido). Útil para GitHub Pages.
-- `docs/` - Manuales y guías (ej.: `docs/Guia_Cartografia_Forestal.md`).
-- `data/` - Conjuntos de datos, ejemplos y `.gitkeep` para mantener la estructura.
-- `notebooks/` - Notebooks y material práctico (ej.: `notebooks/geovisores-online/Geovisores_online.md`).
-- `media/` - Recursos multimedia: `Videos_geotools.md`, `videos.html`, `videos_enhanced.html`.
-- `evaluation/` - Actividades, rúbricas y plantillas de entrega (ej.: `evaluation/Actividades_Aprendizaje.md`).
-- `LICENSE` - CC BY-NC-SA 4.0 (licencia del repositorio).
-- `.gitignore` - Reglas de exclusión (Python, notebooks, VS Code).
+### 🌐 Desarrollo y soporte
+**Tutor  responsable:** Miguel Angel Bermudez S.
+**Contacto:** mabermudezs@ut.edu.co_  
+**Versión:** 1.0 – Noviembre 2025
+- 
