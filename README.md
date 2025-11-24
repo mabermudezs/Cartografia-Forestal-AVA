@@ -120,7 +120,7 @@ Instrucciones: Evalúa a cada grupo usando la siguiente escala para cada criteri
 
 
 RA Evaluado: RA3 (Análisis espacial integrado con SIG)
-
+[<img width="51" height="51" alt="formularios-de-google" src="https://github.com/user-attachments/assets/5a331447-8b18-4627-a14c-1763d8c616dd" /> ]
 
 **Autoevaluación Prácticos 1, 2 y 3**
 
@@ -147,7 +147,7 @@ Escala de valoración:
 
 RA Evaluados: RA1 (Lectura e interpretación cartográfica), RA2 (Gestión de datos geoespaciales oficiales) y RA3 (Análisis espacial integrado con SIG)
 
-
+[<img width="51" height="51" alt="formularios-de-google" src="https://github.com/user-attachments/assets/5a331447-8b18-4627-a14c-1763d8c616dd" /> ]
 ---
 
 ### 📊 Alineación Curricular
