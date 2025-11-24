@@ -176,7 +176,7 @@ graph LR
 
 ### 📚 Bibliografía recomendada
 
-Los  documentos mostrados en las ferencias bibliograficas se encuentran dispuestos en [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n)
+Los  documentos mostrados en las ferencias bibliograficas se encuentran dispuestos en [`/Documentación`](https://github.com/mabermudezs/Cartografia-Forestal-AVA/tree/main/Documentaci%C3%B3n)  tener en cuenta que se encuentran dispuesos en orden alfabetico por nombre junto año de publicacion
 
 📕 BIBLIOGRAFÍA BÁSICA OBLIGATORIA
 Fundamentos Cartográficos:
@@ -188,9 +188,10 @@ Sistemas de Información Geográfica:
 Alonso Sarría, F. (2006). Sistemas de información geográfica. Universidad de Murcia, España.
 Morales, N. S., Lamaro, A. A., Zucchino, B. I., Torrusio, S. E., & Derguy, M. R. (2025). Introducción a los SIG. Libros de Cátedra.
 
-Teledetección y Aplicaciones Forestales:
+Manual de herramientas SIG (Qgis)
 
-Novo Gómez, A., Rodríguez Somoza, J. L., Acuña-Alonso, C., Álvarez Bermúdez, X., & Lorenzo Cimadevila, H. (2021). Teledetección y Sistemas de Información Geográfica en el ámbito forestal.
+Rodríguez Carballo, E., & Alfaro Artavia, L. D. (s. f.). Manual de uso del software QGIS. Programa de las Naciones Unidas para el Desarrollo (PNUD) & Instituto Costarricense de Acueductos y Alcantarillados (AYA).
+
 
 Caso de Estudio Local:
 
